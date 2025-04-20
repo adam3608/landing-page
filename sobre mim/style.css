@@ -1,0 +1,23 @@
+body 
+{  
+    background-color: rgba(18, 34, 68, 0.925);
+    color: white;
+    @font-face 
+        font-family: 'poppinsblack';
+        src: url('./componentes/fontes/Poppins-Black.ttf') format('woff2'),
+             url('./componentes/fontes/Poppins-Black.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+.home {
+    transition: all 0.3s ease; /* Unifiquei as transições */
+    filter: brightness(1);
+}
+
+.home:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}

@@ -1,0 +1,182 @@
+body 
+{  
+    background-color: rgba(3, 18, 51, 0.925);
+    color: white;
+    @font-face 
+        font-family: 'poppinsblack';
+        src: url('./componentes/fontes/Poppins-Black.ttf') format('woff2'),
+             url('./componentes/fontes/Poppins-Black.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   line-height: 4cm;
+}
+a:hover{
+    color: aqua;
+    transition: 800ms all
+}
+header
+{
+    display: block;
+    font-size: 2cm;
+    text-align: center;
+    background-color:  hsla(199, 71%, 49%, 0.063);
+    border-radius: 12px;
+    border: 2px solid rgb(21, 33, 197);
+    margin: 20px auto;
+    max-width: 100000px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+
+}
+.perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+    max-width: 1000px;
+    margin: 30px auto;
+    flex-wrap: wrap; 
+  }
+  
+  .perfil img {
+    border-radius: 8px;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .perfil p {
+    flex: 1; 
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+  }
+  img{background-color:  hsla(199, 71%, 49%, 0.063);
+    border-radius: 12px;
+    border: 2px solid rgb(21, 33, 197);
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+
+  }
+  .perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .perfil img {
+    position: relative;
+    z-index: 2;
+    border-radius: 8px; 
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  
+  .perfil::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 208px;
+    height: 208px;
+    border-radius: 8px; 
+    background: conic-gradient(from 0deg, #00ffff, #ffffff, #00ffff);
+    animation: girar 3s linear infinite;
+    z-index: 1;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+  
+  .perfil {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
+
+.col-esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.col-direita {
+  flex: 1;
+  min-width: 300px;
+}
+
+.perfil img {
+  border-radius: 12px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  background-color: hsla(199, 71%, 49%, 0.063);
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.sobre {
+  color: white;
+  text-align: left;
+}
+
+.sobre ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.contato1, .contato2 ,.contato3{
+  display: inline-block; /* Faz as divs ficarem na mesma linha */
+  margin: 10px; /* Espaçamento entre as imagens */
+  vertical-align: middle; /* Alinha verticalmente */
+}
+
+.contato1{
+  transition: transform 0.3s ease;
+  filter: brightness(1);
+  transition: transform 0,3 ease;
+}
+.contato1:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5); 
+  transform: scale(1.1);
+}
+.contato2{
+  transition: transform 0.3s ease;
+  
+  
+  
+}
+.contato2:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5); 
+  transform: scale(1.1);
+}
+.contato3{
+  transition: transform 0.3s ease;
+  
+  
+  
+}
+.contato3:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5); 
+  transform: scale(1.1);
+}
+
+
+
